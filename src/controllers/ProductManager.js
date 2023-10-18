@@ -4,8 +4,8 @@ class ProductManager {
     constructor() {
         this.path = "./src/models/products.json"
     }
-
-    async getProductsMaster(page=1, limit =10)
+    
+    async getProductsFinal(page=1, limit =10)
     {
         try
         {

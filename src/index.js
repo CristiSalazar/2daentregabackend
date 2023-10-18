@@ -49,7 +49,7 @@ app.get("/carts/:cid", async(req,res)=>{
 
 app.get("/products", async(req,res)=>{
     let allProducts = await product.getProducts()
-    allProducts = allProducts.map(product=>product.toJSON())
+    allProducts = allProducts.map(product => product.toJSON())
     res.render("viewProducts", {
         title: "vista de los productos",
         products: allProducts
